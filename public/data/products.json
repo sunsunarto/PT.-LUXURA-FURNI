@@ -1,0 +1,802 @@
+[
+    {
+        "id": 1,
+        "name": {
+            "id": "Meja Makan Kayu Jati 6 Kursi",
+            "en": "Teak Wood Dining Table With 6 Chairs"
+        },
+        "category": "table",
+        "price": "4.800.000",
+        "quantity": 15
+    },
+    {
+        "id": 2,
+        "name": {
+            "id": "Meja Makan Minimalis 4 kursi",
+            "en": "Minimalist Dining Table With 4 Chairs"
+        },
+        "category": "table",
+        "price": "2.800.000",
+        "quantity": 10
+    },
+    {
+        "id": 3,
+        "name": {
+            "id": "Kursi Kantor Ergonomis",
+            "en": "Erogonomic Office Chair"
+        },
+        "category": "chair",
+        "price": "1.200.000",
+        "quantity": 15
+    },
+    {
+        "id": 4,
+        "name": {
+            "id": "Lemari Pakaian 3 Pintu Kayu Jati",
+            "en": "3 Door Teak Wood Wardrobe"
+        },
+        "category": "wardrobe",
+        "price": "5.300.000",
+        "quantity": 6
+    },
+    {
+        "id": 5,
+        "name": {
+            "id": "Lemari Plastik 4 Susun",
+            "en": "plastic Cabinets 4 layers"
+        },
+        "category": "wardrobe",
+        "price": "550.000",
+        "quantity": 12
+    },
+    {
+        "id": 6,
+        "name": {
+            "id": "Ranjang Besi Ukuran Queen",
+            "en": "Queen Size Iron Bed"
+        },
+        "category": "Bed",
+        "price": "Rp 2.400.000",
+        "quantity": 15
+    },
+    {
+        "id": 7,
+        "name": {
+            "id": "Kasur Springbed 160x200",
+            "en": "Springbed Mattress 160x200"
+        },
+        "category": "bed",
+        "price": "3.300.000",
+        "quantity": 6
+    },
+    {
+        "id": 8,
+        "name": {
+            "id": "Sofa 3 Dudukan Kain",
+            "en": "3-Seat Fabric Sofa"
+        },
+        "category": "chair",
+        "price": "4.500.000",
+        "quantity": 5
+    },
+    {
+        "id": 9,
+        "name": {
+            "id": "Sofa Bed Multifungsi",
+            "en": "Multifunctional Sofa Bed"
+        },
+        "category": "chair",
+        "price": "3.800.000",
+        "quantity": 15
+    },
+    {
+        "id": 10,
+        "name": {
+            "id": "Rak Buku Minimalis",
+            "en": "Minimalist Bookshelf"
+        },
+        "category": "shelf",
+        "price": "650.000",
+        "quantity": 12
+    },
+    {
+        "id": 11,
+        "name": {
+            "id": "Rak Sepatu 3 Tingkat",
+            "en": "3-Tier Shoe Rack"
+        },
+        "category": "shelf",
+        "price": "370.000",
+        "quantity": 20
+    },
+    {
+        "id": 12,
+        "name": {
+            "id": "Lemari Dapur Aluminium",
+            "en": "Aluminum Kitchen Cabinet"
+        },
+        "category": "kitchen",
+        "price": "3.000.000",
+        "quantity": 4
+    },
+    {
+        "id": 13,
+        "name": {
+            "id": "Meja Belajar Anak",
+            "en": "Children's Study Table"
+        },
+        "category": "table",
+        "price": "850.000",
+        "quantity": 10
+    },
+    {
+        "id": 14,
+        "name": {
+            "id": "Kursi Cafe Kayu",
+            "en": "Wooden Cafe Chair"
+        },
+        "category": "chair",
+        "price": "500.000",
+        "quantity": 15
+    },
+    {
+        "id": 15,
+        "name": {
+            "id": "Meja Kopi Kaca",
+            "en": "Glass Coffee Table"
+        },
+        "category": "table",
+        "price": "1.300.000",
+        "quantity": 8
+    },
+    {
+        "id": 16,
+        "name": {
+            "id": "Meja Kerja Kantor",
+            "en": "Office Desk"
+        },
+        "category": "table",
+        "price": "2.200.000",
+        "quantity": 15
+    },
+    {
+        "id": 17,
+        "name": {
+            "id": "Kursi Gaming",
+            "en": "Gaming Chair"
+        },
+        "category": "chair",
+        "price": "2.700.000",
+        "quantity": 5
+    },
+    {
+        "id": 18,
+        "name": {
+            "id": "Lemari TV Minimalis",
+            "en": "Minimalist TV Cabinet"
+        },
+        "category": "shelf",
+        "price": "2.500.000",
+        "quantity": 15
+    },
+    {
+        "id": 19,
+        "name": {
+            "id": "Meja Rias dengan Cermin LED",
+            "en": "Dressing Table with LED Mirror"
+        },
+        "category": "table",
+        "price": "2.200.000",
+        "quantity": 6
+    },
+    {
+        "id": 20,
+        "name": {
+            "id": "Rak Dinding Kayu",
+            "en": "Wooden Wall Shelf"
+        },
+        "category": "shelf",
+        "price": "250.000",
+        "quantity": 20
+    },
+    {
+        "id": 21,
+        "name": {
+            "id": "Meja Konsol Ruang Tamu",
+            "en": "Living Room Console Table"
+        },
+        "category": "table",
+        "price": "1.800.000",
+        "quantity": 4
+    },
+    {
+        "id": 22,
+        "name": {
+            "id": "Kabinet Serbaguna",
+            "en": "Multipurpose Cabinet"
+        },
+        "category": "shelf",
+        "price": "1.500.000",
+        "quantity": 8
+    },
+    {
+        "id": 23,
+        "name": {
+            "id": "Tempat Tidur Bayi Kayu",
+            "en": "Wooden Crib"
+        },
+        "category": "table",
+        "price": "2.800.000",
+        "quantity": 3
+    },
+    {
+        "id": 24,
+        "name": {
+            "id": "Drawer 5 Laci",
+            "en": "5-Drawer Drawer"
+        },
+        "category": "drawer",
+        "price": "1.200.000",
+        "quantity": 10
+    },
+    {
+        "id": 25,
+        "name": {
+            "id": "Kursi Bar Tinggi",
+            "en": "High Bar Chair"
+        },
+        "category": "chair",
+        "price": "600.000",
+        "quantity": 12
+    },
+    {
+        "id": 26,
+        "name": {
+            "id": "Sofa L Sudut Kain Linen",
+            "en": "Linen L-Shaped Corner Sofa"
+        },
+        "category": "chair",
+        "price": "6.200.000",
+        "quantity": 4
+    },
+    {
+        "id": 27,
+        "name": {
+            "id": "Meja Lipat Portable",
+            "en": "Portable Folding Table"
+        },
+        "category": "table",
+        "price": "300.000",
+        "quantity": 15
+    },
+    {
+        "id": 28,
+        "name": {
+            "id": "Meja TV Dinding MDF",
+            "en": "MDF Wall-Mounted TV Stand"
+        },
+        "category": "table",
+        "price": "1.400.000",
+        "quantity": 6
+    },
+    {
+        "id": 29,
+        "name": {
+            "id": "Rak Pajangan Kayu",
+            "en": "Wooden Display Shelf"
+        },
+        "category": "table",
+        "price": "1.100.000",
+        "quantity": 8
+    },
+    {
+        "id": 30,
+        "name": {
+            "id": "Lemari Arsip Kantor",
+            "en": "Office Filing Cabinet"
+        },
+        "category": "shelf",
+        "price": "3.200.000",
+        "quantity": 5
+    },
+    {
+        "id": 31,
+        "name": {
+            "id": "Partisi Ruang Tamu",
+            "en": "Living Room Partition"
+        },
+        "category": "partition",
+        "price": "1.700.000",
+        "quantity": 6
+    },
+    {
+        "id": 32,
+        "name": {
+            "id": "Meja Komputer",
+            "en": "Computer Desk"
+        },
+        "category": "table",
+        "price": "850.000",
+        "quantity": 10
+    },
+    {
+        "id": 33,
+        "name": {
+            "id": "Kursi Tamu Kayu",
+            "en": "Wooden Guest Chair"
+        },
+        "category": "chair",
+        "price": "1.900.000",
+        "quantity": 8
+    },
+    {
+        "id": 34,
+        "name": {
+            "id": "Sofa Kulit 2 Dudukan",
+            "en": "2-Seat Leather Sofa"
+        },
+        "category": "chair",
+        "price": "5.200.000",
+        "quantity": 5
+    },
+    {
+        "id": 35,
+        "name": {
+            "id": "Lemari Kaca Pajangan",
+            "en": "Glass Display Cabinet"
+        },
+        "category": "shelf",
+        "price": "3.500.000",
+        "quantity": 4
+    },
+    {
+        "id": 36,
+        "name": {
+            "id": "Meja Bar Mini",
+            "en": "Mini Bar Table"
+        },
+        "category": "table",
+        "price": "2.300.000",
+        "quantity": 5
+    },
+    {
+        "id": 37,
+        "name": {
+            "id": "Kabinet Dapur Sudut",
+            "en": "Corner Kitchen Cabinet"
+        },
+        "category": "kitchen",
+        "price": "1.700.000",
+        "quantity": 4
+    },
+    {
+        "id": 38,
+        "name": {
+            "id": "Meja Samping Tempat Tidur",
+            "en": "Bedside Table"
+        },
+        "category": "table",
+        "price": "500.000",
+        "quantity": 10
+    },
+    {
+        "id": 39,
+        "name": {
+            "id": "Bangku Panjang Kayu Solid",
+            "en": "Solid Wood Bench"
+        },
+        "category": "chair",
+        "price": "1.500.000",
+        "quantity": 6
+    },
+    {
+        "id": 40,
+        "name": {
+            "id": "Meja Tulis Kayu",
+            "en": "Wooden Writing Desk"
+        },
+        "category": "table",
+        "price": "1.200.000",
+        "quantity": 7
+    },
+    {
+        "id": 41,
+        "name": {
+            "id": "Rak Gantung Serbaguna",
+            "en": "Multipurpose Hanging Shelf"
+        },
+        "category": "shelf",
+        "price": "200.000",
+        "quantity": 20
+    },
+    {
+        "id": 42,
+        "name": {
+            "id": "Laci Plastik 3 Susun",
+            "en": "3-Tier Plastic Drawer"
+        },
+        "category": "drawer",
+        "price": "280.000",
+        "quantity": 25
+    },
+    {
+        "id": 43,
+        "name": {
+            "id": "Rak TV Industrial",
+            "en": "Industrial TV Stand"
+        },
+        "category": "stand",
+        "price": "2.500.000",
+        "quantity": 7
+    },
+    {
+        "id": 44,
+        "name": {
+            "id": "Sofa Minimalis 2 Dudukan",
+            "en": "Minimalist 2-Seat Sofa"
+        },
+        "category": "chair",
+        "price": "3.600.000",
+        "quantity": 6
+    },
+    {
+        "id": 45,
+        "name": {
+            "id": "Nakas Kayu",
+            "en": "Wooden Nightstand"
+        },
+        "category": "stand",
+        "price": "650.000",
+        "quantity": 10
+    },
+    {
+        "id": 46,
+        "name": {
+            "id": "Lemari Besi Arsip",
+            "en": "Iron File Cabinet"
+        },
+        "category": "wardrobe",
+        "price": "2.800.000",
+        "quantity": 5
+    },
+    {
+        "id": 47,
+        "name": {
+            "id": "Kursi Lipat Plastik",
+            "en": "Plastic Folding Chair"
+        },
+        "category": "chair",
+        "price": "150.000",
+        "quantity": 30
+    },
+    {
+        "id": 48,
+        "name": {
+            "id": "Kursi Taman Besi",
+            "en": "Garden Chair Iron"
+        },
+        "category": "chair",
+        "price": "2.000.000",
+        "quantity": 6
+    },
+    {
+        "id": 49,
+        "name": {
+            "id": "Rak Tanaman Besi",
+            "en": "Iron Plant Rack"
+        },
+        "category": "shelf",
+        "price": "450.000",
+        "quantity": 12
+    },
+    {
+        "id": 50,
+        "name": {
+            "id": "Tempat Tidur Tingkat Anak",
+            "en": "Kid's Bunk Bed"
+        },
+        "category": "bed",
+        "price": "4.500.000",
+        "quantity": 7
+    },
+    {
+        "id": 51,
+        "name": {
+            "id": "Meja Rapat Kantor",
+            "en": "Office Meeting Table"
+        },
+        "category": "table",
+        "price": "6.000.000",
+        "quantity": 5
+    },
+    {
+        "id": 52,
+        "name": {
+            "id": "Kursi Kayu Retro",
+            "en": "Retro Wooden Chair"
+        },
+        "category": "chair",
+        "price": "750.000",
+        "quantity": 10
+    },
+    {
+        "id": 53,
+        "name": {
+            "id": "Meja Sudut Dekoratif",
+            "en": "Decorative Corner Table"
+        },
+        "category": "table",
+        "price": "1.100.000",
+        "quantity": 6
+    },
+    {
+        "id": 54,
+        "name": {
+            "id": "Lemari Gantung Kamar Mandi",
+            "en": "Bathroom Hanging Cabinet"
+        },
+        "category": "shelf",
+        "price": "600.000",
+        "quantity": 8
+    },
+    {
+        "id": 55,
+        "name": {
+            "id": "Kabinet TV Modern",
+            "en": "Modern TV Cabinet"
+        },
+        "category": "shelf",
+        "price": "1.900.000",
+        "quantity": 5
+    },
+    {
+        "id": 56,
+        "name": {
+            "id": "Meja Belajar Lipat",
+            "en": "Folding Study Table"
+        },
+        "category": "table",
+        "price": "320.000",
+        "quantity": 15
+    },
+    {
+        "id": 57,
+        "name": {
+            "id": "Sofa Recliner Elektrik",
+            "en": "Electric Recliner Sofa"
+        },
+        "category": "chair",
+        "price": "7.200.000",
+        "quantity": 7
+    },
+    {
+        "id": 58,
+        "name": {
+            "id": "Rak Baju Portable",
+            "en": "Portable Clothes Rack"
+        },
+        "category": "shelf",
+        "price": "500.000",
+        "quantity": 12
+    },
+    {
+        "id": 59,
+        "name": {
+            "id": "Meja Kerja Industrial",
+            "en": "Industrial Work Desk"
+        },
+        "category": "table",
+        "price": "2.800.000",
+        "quantity": 4
+    },
+    {
+        "id": 60,
+        "name": {
+            "id": "Kursi Teras Rotan",
+            "en": "Rattan Patio Chair"
+        },
+        "category": "chair",
+        "price": "1.100.000",
+        "quantity": 8
+    },
+    {
+        "id": 61,
+        "name": {
+            "id": "Ranjang Kayu Minimalis",
+            "en": "Minimalist Wooden Bed"
+        },
+        "category": "bed",
+        "price": "3.700.000",
+        "quantity": 5
+    },
+    {
+        "id": 62,
+        "name": {
+            "id": "Kabinet Dapur 2 Pintu",
+            "en": "2-Door Kitchen Cabinet"
+        },
+        "category": "shelf",
+        "price": "1.300.000",
+        "quantity": 6
+    },
+    {
+        "id": 63,
+        "name": {
+            "id": "Nakas Laci 3 Tingkat",
+            "en": "3-Tier Nightstand with Drawers"
+        },
+        "category": "drawer",
+        "price": "750.000",
+        "quantity": 10
+    },
+    {
+        "id": 64,
+        "name": {
+            "id": "Meja Belajar IKEA Style",
+            "en": "IKEA-Style Study Table"
+        },
+        "category": "table",
+        "price": "1.700.000",
+        "quantity": 7
+    },
+    {
+        "id": 65,
+        "name": {
+            "id": "Kursi Ottoman",
+            "en": "Ottoman Chair"
+        },
+        "category": "chair",
+        "price": "500.000",
+        "quantity": 12
+    },
+    {
+        "id": 66,
+        "name": {
+            "id": "Lemari Arsip Sliding",
+            "en": "Sliding Filing Cabinet"
+        },
+        "category": "shelf",
+        "price": "3.600.000",
+        "quantity": 4
+    },
+    {
+        "id": 67,
+        "name": {
+            "id": "Kabinet Sudut Ruang Tamu",
+            "en": "Living Room Corner Cabinet"
+        },
+        "category": "shelf",
+        "price": "1.300.000",
+        "quantity": 6
+    },
+    {
+        "id": 68,
+        "name": {
+            "id": "Lemari TV Kayu Solid",
+            "en": "Solid Wood TV Cabinet"
+        },
+        "category": "shelf",
+        "price": "3.300.000",
+        "quantity": 5
+    },
+    {
+        "id": 69,
+        "name": {
+            "id": "Meja Tengah Ruang Tamu Bundar",
+            "en": "Round Living Room Center Table"
+        },
+        "category": "table",
+        "price": "1.500.000",
+        "quantity": 8
+    },
+    {
+        "id": 70,
+        "name": {
+            "id": "Sofa Modular 5 Dudukan",
+            "en": "5-Seat Modular Sofa"
+        },
+        "category": "chair",
+        "price": "8.800.000",
+        "quantity": 6
+    },
+    {
+        "id": 71,
+        "name": {
+            "id": "Rak Gantung Dapur",
+            "en": "Kitchen Hanging Shelf"
+        },
+        "category": "shelf",
+        "price": "350.000",
+        "quantity": 15
+    },
+    {
+        "id": 72,
+        "name": {
+            "id": "Kursi Santai Lipat",
+            "en": "Folding Lounge Chair"
+        },
+        "category": "chair",
+        "price": "450.000",
+        "quantity": 10
+    },
+    {
+        "id": 73,
+        "name": {
+            "id": "Meja Belajar Anak Lipat",
+            "en": "Folding Children's Study Table"
+        },
+        "category": "table",
+        "price": "280.000",
+        "quantity": 12
+    },
+    {
+        "id": 74,
+        "name": {
+            "id": "Rak Buku Serbaguna",
+            "en": "Multipurpose Bookshelf"
+        },
+        "category": "shelf",
+        "price": "750.000",
+        "quantity": 10
+    },
+    {
+        "id": 75,
+        "name": {
+            "id": "Kursi Kerja Minimalis",
+            "en": "Minimalist Work Chair"
+        },
+        "category": "chair",
+        "price": "1.300.000",
+        "quantity": 8
+    },
+    {
+        "id": 76,
+        "name": {
+            "id": "Kabinet Laci Kantor",
+            "en": "Office Drawer Cabinet"
+        },
+        "category": "drawer",
+        "price": "2.000.000",
+        "quantity": 7
+    },
+    {
+        "id": 77,
+        "name": {
+            "id": "Rak Sudut Besi Hitam",
+            "en": "Black Iron Corner Shelf"
+        },
+        "category": "shelf",
+        "price": "500.000",
+        "quantity": 8
+    },
+    {
+        "id": 78,
+        "name": {
+            "id": "Sofa Kayu Jati",
+            "en": "Teak Sofa"
+        },
+        "category": "chair",
+        "price": "6.500.000",
+        "quantity": 15
+    },
+    {
+        "id": 79,
+        "name": {
+            "id": "Lemari Geser Sliding 3 Pintu",
+            "en": "3-Door Sliding Wardrobe"
+        },
+        "category": "wardrobe",
+        "price": "5.000.000",
+        "quantity": 8
+    },
+    {
+        "id": 80,
+        "name": {
+            "id": "Meja Makan Marmer 6 Kursi",
+            "en": "6-Seat Marble Dining Table"
+        },
+        "category": "table",
+        "price": "7.500.000",
+        "quantity": 6
+    }
+]
