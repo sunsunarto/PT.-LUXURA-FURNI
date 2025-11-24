@@ -1,51 +1,35 @@
-import { useState, useContext } from "react";
-import { Button, Drawer, Radio, Space } from "antd";
+import { useContext } from "react";
+import { Button } from "antd";
 import { LanguageContext } from "../context/LanguageContext.js";
 
 export default function Languages() {
-  const [drawerVisible, setDrawerVisible] = useState(false);
   const { language, setLanguage } = useContext(LanguageContext);
 
-  const handleLanguageChange = (e) => {
-    setLanguage(e.target.value);
-    setDrawerVisible(false);
-  };
-
-  // Map language codes to display names
   const languageNames = {
     en: "English",
     id: "Bahasa Indonesia",
   };
 
+  const toggleLanguage = () => {
+    setLanguage(language === "en" ? "id" : "en");
+  };
+
   return (
-    <div style={{ padding: "8px 16px" }}>
+    <div style={{ padding: "8px 16px", fontFamily: 'Cormorant Garamond, serif'}}>
       <Button
         type="primary"
         style={{
-          borderRadius: 4,
+          borderRadius: 30,
           boxShadow: "0 2px 6px rgba(0,0,0,0.15)",
           backgroundColor: "#3949AB",
           color: "#fff",
+          fontSize: "20px",
+          fontFamily: 'Cormorant Garamond, serif'
         }}
-        onClick={() => setDrawerVisible(true)}
+        onClick={toggleLanguage}
       >
-        {languageNames[language] || "Select Language"}
+        {languageNames[language]}
       </Button>
-
-      <Drawer
-        title="Select Language"
-        placement="right"
-        onClose={() => setDrawerVisible(false)}
-        open={drawerVisible} // ✅ AntD v5 uses `open` instead of `visible`
-        bodyStyle={{ padding: 24 }}
-      >
-        <Radio.Group onChange={handleLanguageChange} value={language}>
-          <Space direction="vertical">
-            <Radio value="en">English</Radio>
-            <Radio value="id">Bahasa Indonesia</Radio>
-          </Space>
-        </Radio.Group>
-      </Drawer>
     </div>
   );
 }
