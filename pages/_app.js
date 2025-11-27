@@ -1,6 +1,7 @@
 import "../Styles/globals.css";
 import { ConfigProvider } from "antd";
 import { LanguageProvider } from "../context/LanguageContext.js";
+import { CartProvider } from "../context/CartContext.js";   // 👈 add this
 import { useEffect } from "react";
 import gsap from "gsap";
 
@@ -30,9 +31,11 @@ function MyApp({ Component, pageProps, router }) {
       }}
     >
       <LanguageProvider>
-        <main>
-          <Component {...pageProps} />
-        </main>
+        <CartProvider>
+          <main>
+            <Component {...pageProps} />
+          </main>
+        </CartProvider>
       </LanguageProvider>
     </ConfigProvider>
   );

@@ -1,34 +1,38 @@
 "use client";
-import { useState } from "react";
-import Languages from "../Components/Languages.js";
+import { useContext } from "react";
+import Languages from "./Languages";
 import { MenuOutlined, ShoppingCartOutlined } from "@ant-design/icons";
-import MenuPopUp from "./PopUpMenu.js";
+import MenuPopUp from "./PopUpMenu";
+import { CartContext } from "../context/CartContext";
+import PopUpCart from "./PopUpCard";
 
 export default function Header() {
-    const [cart, setCart] = useState(0);
-    const [menuVisible, setMenuVisible] = useState(false)
+    const { cartItems, isCartVisible, toggleCart, setIsCartVisible } = useContext(CartContext);
 
-     const toggleMenu = () => setMenuVisible(!menuVisible);
+    return (
+        <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "0 20px", backgroundColor: "white" }}>
+            <div className="logo">
+                <img src="/Logo Perusahaan/IMG-20251105-WA0003.jpg" alt="Logo" width={150} />
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+                <div style={{ backgroundColor: "#BFD4E4", padding: "4px 6px", borderRadius: "8px", cursor: "pointer" }} onClick={toggleCart}>
+                    <ShoppingCartOutlined style={{ fontSize: "20px", color: "black" }} />
+                    <span style={{ color: "black" }}> Cart: {cartItems.length}</span>
+                </div>
+                <Languages />
+                <div>
+                    <MenuOutlined style={{ fontSize: "20px", color: "#042E61" }} />
+                    <MenuPopUp visible={isCartVisible} onClose={() => setIsCartVisible(false)} />
+                </div>
+            </div>
 
-    const incrementCart = () => {
-        setCart(cart + 1);
-    };
-  return (
-    <header className="header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', backgroundColor: 'white', fontFamily: 'Cormorant Garamond, serif' }}>
-        <div className="logo">
-            <img src="/Logo Perusahaan/IMG-20251105-WA0003.jpg" alt="Logo" width={150}/>        
-        </div>
-        <div className="header-right style" style={{  display: 'flex', alignItems: 'center', gap: '20px' }}>
-            <div classname="cart"  style={{backgroundColor: '#BFD4E4', padding: '4px 6px', borderRadius: '8px', cursor: 'pointer'}} onClick={incrementCart}>
-                <ShoppingCartOutlined style={{ fontSize: '20px', color: 'black', fontFamily: 'Cormorant Garamond, serif'}} />
-                <span className="cart-count" style={{color: 'black', fontFamily: 'Cormorant Garamond, serif'}}> Cart: {cart}</span>
-            </div>
-            <Languages />
-            <div className="menu-icon">
-                <MenuOutlined style={{ fontSize: '20px', color: '#042E61' }}  onClick={toggleMenu}/>
-                <MenuPopUp visible={menuVisible} onClose={() => setMenuVisible(false)} />
-            </div>
-        </div>
-    </header>
-  );
+            {cartItems.length > 0 && (
+                <PopUpCart
+                    cartItems={cartItems}   // 👈 pass the whole array
+                    visible={isCartVisible}
+                    onClose={() => setIsCartVisible(false)}
+                />
+            )}
+        </header>
+    );
 }
