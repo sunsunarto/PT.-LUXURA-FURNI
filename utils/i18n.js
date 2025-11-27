@@ -6,12 +6,10 @@ export const translations = {
     error: "Error",
     untitled: "Untitled",
     table: {
-      id: "ID",
       name: "Name",
-      category: "Category",
       price: "Price",
-      quantity: "Quantity",
     },
+    addToCart: "Add to Cart",
     languages: "Languages",
   },
   id: {
@@ -21,12 +19,10 @@ export const translations = {
     error: "Kesalahan",
     untitled: "Tanpa Judul",
     table: {
-      id: "ID",
       name: "Nama",
-      category: "Kategori",
       price: "Harga",
-      quantity: "Jumlah",
     },
+    addToCart: "Tambah ke Keranjang",
     languages: "Bahasa",
   },
 };
