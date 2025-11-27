@@ -11,10 +11,23 @@ export function CartProvider({ children }) {
     setCartItems((prev) => [...prev, product]);
   };
 
+  const removeItem = (id) => {
+    setCartItems((prevItems) => prevItems.filter(item => item.id !== id));
+  };
+
   const toggleCart = () => setIsCartVisible(!isCartVisible);
 
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, isCartVisible, toggleCart, setIsCartVisible }}>
+    <CartContext.Provider
+      value={{
+        cartItems,
+        addToCart,
+        removeItem,
+        isCartVisible,
+        toggleCart,
+        setIsCartVisible,
+      }}
+    >
       {children}
     </CartContext.Provider>
   );

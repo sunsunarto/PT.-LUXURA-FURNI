@@ -13,7 +13,7 @@ const MenuPopUp = ({ visible, onClose }) => {
     >
       <Menu mode="vertical">
         <Menu.Item key="about">
-          <Link href="/Components/OrderCard">About Us</Link>
+          <Link href="/Components/About">About Us</Link>
         </Menu.Item>
         <Menu.Item key="products">
           <a href="#products">Products</a>
