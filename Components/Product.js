@@ -7,15 +7,16 @@ import { CartContext } from "../context/CartContext";
 export default function Product() {
   const [searchQuery, setSearchQuery] = useState("");
   const [products, setProducts] = useState([]);
-  const [showAll, setShowAll] = useState(false); // ✅ toggle state
+  const [showAll, setShowAll] = useState(false);
   const { language } = useContext(LanguageContext);
   const { addToCart } = useContext(CartContext);
-  const t = translations[language];
+  const t = translations[language] || translations["en"] || {};
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const res = await fetch("/data/Products.json");
+        if (!res.ok) throw new Error("Failed to fetch products");
         const data = await res.json();
         setProducts(Array.isArray(data) ? data : data?.products || []);
       } catch (error) {
@@ -35,7 +36,6 @@ export default function Product() {
     return nameId.includes(query) || nameEn.includes(query) || category.includes(query);
   });
 
-  // ✅ limit to 12 unless showAll is true
   const visibleProducts = showAll ? filteredProducts : filteredProducts.slice(0, 12);
 
   return (
@@ -50,7 +50,7 @@ export default function Product() {
       >
         <input
           type="text"
-          placeholder={t.search}
+          placeholder={t.search || "Search"}
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           style={{
@@ -65,7 +65,7 @@ export default function Product() {
       </div>
 
       {filteredProducts.length === 0 ? (
-        <Empty description={t.noProducts} style={{ backgroundColor: "#BFD4E4" }} />
+        <Empty description={t.noProducts || "No products found"} style={{ backgroundColor: "#BFD4E4" }} />
       ) : (
         <>
           <Row gutter={[16, 16]} style={{ backgroundColor: "#BFD4E4" }}>
@@ -119,7 +119,7 @@ export default function Product() {
                     }}
                     onClick={() => addToCart(product)}
                   >
-                    {t.addToCart}
+                    {t.addToCart || "Add to Cart"}
                   </Button>
                 </Card>
               </Col>
