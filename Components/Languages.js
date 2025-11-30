@@ -21,7 +21,7 @@ export default function Languages() {
         style={{
           borderRadius: 30,
           boxShadow: "0 2px 6px rgba(0,0,0,0.15)",
-          backgroundColor: "#3949AB",
+          backgroundColor: "#042E61",
           color: "#fff",
           fontSize: "20px",
           fontFamily: 'Cormorant Garamond, serif'

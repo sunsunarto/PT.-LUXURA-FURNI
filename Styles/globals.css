@@ -4,7 +4,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-cormorant: 'Cormorant Garamond', serif; /* define font here */
+  --font-cormorant: 'Cormorant Garamond', serif; 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,5 +17,6 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: var(--font-cormorant); /* now works */
+  font-family: var(--font-cormorant);
+  overflow-x: hidden;
 }

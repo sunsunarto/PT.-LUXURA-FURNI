@@ -1,5 +1,6 @@
 "use client";
 import { createContext, useState } from "react";
+import { LanguageContext } from "./LanguageContext";
 
 export const CartContext = createContext();
 

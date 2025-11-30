@@ -1,13 +1,17 @@
+import { useContext } from "react";
 import { Typography, Space } from "antd";
 import { InstagramOutlined } from "@ant-design/icons";
-
+import { LanguageContext } from "../context/LanguageContext";
+import { translations } from "../utils/i18n";
 const { Title, Text } = Typography;
 
 export default function Footer() {
+  const { language } = useContext(LanguageContext);
+  const t = translations[language]
   return (
     <div
       style={{
-        backgroundColor: "#1A237E",
+        backgroundColor: "#042E61",
         color: "#fff",
         padding: "32px 24px",
         fontFamily: 'Cormorant Garamond, serif'
@@ -25,14 +29,14 @@ export default function Footer() {
               LUXURA FURNI
             </Title>
             <Text style={{ color: "#fff", fontSize: 12, fontFamily: 'Cormorant Garamond, serif' }}>
-              Furniture Store
+              {t.store}
             </Text>
           </div>
         </div>
         <Space direction="horizontal" align="start" size={64}>
           <div className="address">
             <Title level={4} style={{ color: "#fff", marginBottom: 8, maxWidthwidth : "250px", fontFamily: 'Cormorant Garamond, serif' }}>
-              Address
+              {t.address}
             </Title>
             <Text style={{ color: "#fff", maxWidthwidth : "250px", fontFamily: 'Cormorant Garamond, serif' }}>
               Jl. Krendang Raya 107 AB Duri Utara, Tambora, Jakarta Barat
@@ -40,7 +44,7 @@ export default function Footer() {
           </div>
           <div className="phone" style={{ marginLeft: 48 }}>
             <Title level={4} style={{ color: "#fff", marginBottom: 8 , fontFamily: 'Cormorant Garamond, serif'}}>
-              Phone
+              {t.telp}
             </Title>
             <Text style={{ color: "#fff", fontFamily: 'Cormorant Garamond, serif' }}>
               +62 877-4023-6169
@@ -56,10 +60,10 @@ export default function Footer() {
           </div>
           <div className="sosial media" style={{ marginLeft: 48 }}>
             <Title level={4} style={{ color: "#fff", marginBottom: 8, fontFamily: 'Cormorant Garamond, serif' }}>
-              Follow Us
+              {t.follow}
             </Title>
             <Text style={{ color: "#fff", fontSize: 20, cursor: "pointer", fontFamily: 'Cormorant Garamond, serif' }}>
-              <InstagramOutlined />
+              <InstagramOutlined href=""/>
             </Text>
           </div>
         </Space>
