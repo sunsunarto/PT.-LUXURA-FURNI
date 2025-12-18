@@ -1,4 +1,4 @@
-import { useRouter} from "next/router";
+import { useRouter } from "next/router";
 import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import { LanguageContext } from "../context/LanguageContext";
@@ -8,8 +8,8 @@ export default function OrderDetails() {
   const router = useRouter();
   const { cartItems } = useContext(CartContext);
   const { totalPrice } = router.query;
-  const  {language} = useContext(LanguageContext)
-  const t = translations[language]
+  const { language } = useContext(LanguageContext);
+  const t = translations[language];
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -37,7 +37,7 @@ export default function OrderDetails() {
       <div
         style={{
           textAlign: "center",
-          padding: "80px",
+          padding: "60px 20px",
           backgroundColor: "#40648F",
           fontFamily: "Cormorant Garamond, serif",
         }}
@@ -46,7 +46,7 @@ export default function OrderDetails() {
           style={{
             marginBottom: "16px",
             color: "#042E61",
-            fontSize: "70px",
+            fontSize: "2.5rem",
           }}
         >
           Order <span style={{ color: "#BFD4E4" }}>Details</span>
@@ -56,14 +56,16 @@ export default function OrderDetails() {
       <div
         style={{
           display: "flex",
+          flexWrap: "wrap",
           gap: "32px",
           padding: "32px",
           margin: "0 auto",
           backgroundColor: "white",
           color: "black",
+          maxWidth: "1200px",
         }}
       >
-        <div style={{ flex: 1 }}>
+        <div style={{ flex: "1 1 300px", minWidth: "280px" }}>
           <h2 style={{ marginBottom: "16px" }}>{t.yourDetails}</h2>
           <form
             onSubmit={handleSubmit}
@@ -73,47 +75,48 @@ export default function OrderDetails() {
               Email*
               <input
                 type="email"
-                style={{backgroundColor: "#D9D9D9", borderRadius: "5px"}}
+                style={{ backgroundColor: "#D9D9D9", borderRadius: "5px", padding: "8px" }}
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </label>
-            <div style={{ display: "flex", gap: "12px" }}>
-              <label style={{ display: "flex", flexDirection: "column" }}>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
+              <label style={{ flex: "1 1 140px", display: "flex", flexDirection: "column" }}>
                 {t.name1}*
-            <input
-              type="text"
-              required
-              style={{backgroundColor: "#D9D9D9", borderRadius: "5px"}}
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
-            />
-            </label>
-            <label style={{ display: "flex", flexDirection: "column" }}>
-              {t.name2}*
-              <input
-                type="text"
-                required
-                style={{backgroundColor: "#D9D9D9", borderRadius: "5px"}}
-                value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
-              />
-            </label>
+                <input
+                  type="text"
+                  required
+                  style={{ backgroundColor: "#D9D9D9", borderRadius: "5px", padding: "8px" }}
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                />
+              </label>
+              <label style={{ flex: "1 1 140px", display: "flex", flexDirection: "column" }}>
+                {t.name2}*
+                <input
+                  type="text"
+                  required
+                  style={{ backgroundColor: "#D9D9D9", borderRadius: "5px", padding: "8px" }}
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                />
+              </label>
             </div>
+
             <label style={{ display: "flex", flexDirection: "column" }}>
               {t.telp}*
               <input
                 type="tel"
-                style={{backgroundColor: "#D9D9D9", borderRadius: "5px"}}
+                style={{ backgroundColor: "#D9D9D9", borderRadius: "5px", padding: "8px" }}
                 required
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
               />
             </label>
-            <div style={{ display: "flex", flexDirection: "column" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
               <label>{t.metode}</label>
-              <div style={{ display: "flex", flexDirection: "row", gap: "12px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <input
                   type="radio"
                   name="method"
@@ -123,7 +126,7 @@ export default function OrderDetails() {
                 />
                 <span>{t.pay1}</span>
               </div>
-              <div style={{ display: "flex", flexDirection: "row", gap: "12px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <input
                   type="radio"
                   name="method"
@@ -134,14 +137,16 @@ export default function OrderDetails() {
                 <span>{t.pay2}</span>
               </div>
             </div>
+
             <label style={{ display: "flex", flexDirection: "column" }}>
               {t.address}*
               <input
                 type="text"
-                style={{backgroundColor: "#D9D9D9"}}
+                style={{ backgroundColor: "#D9D9D9", borderRadius: "5px", padding: "8px" }}
                 required
               />
             </label>
+
             <button
               type="submit"
               style={{
@@ -151,6 +156,7 @@ export default function OrderDetails() {
                 color: "#000",
                 border: "none",
                 borderRadius: "4px",
+                fontSize: "1rem",
               }}
             >
               Check Out
@@ -160,7 +166,8 @@ export default function OrderDetails() {
 
         <div
           style={{
-            flex: 1,
+            flex: "1 1 300px",
+            minWidth: "280px",
             border: "1px solid #ddd",
             borderRadius: "8px",
             padding: "24px",
@@ -169,7 +176,7 @@ export default function OrderDetails() {
           {cartItems.map((item) => (
             <div
               key={item.id}
-              style={{ display: "flex", gap: "12px", marginBottom: "16px" }}
+              style={{ display: "flex", gap: "12px", marginBottom: "16px", flexWrap: "wrap" }}
             >
               <img
                 src={item.image}
@@ -181,7 +188,7 @@ export default function OrderDetails() {
                   borderRadius: "8px",
                 }}
               />
-              <div>
+              <div style={{ flex: "1 1 auto" }}>
                 <p>{item.name?.id || item.name?.en}</p>
                 <p>Rp {item.price.toLocaleString("id-ID")}</p>
               </div>
@@ -190,12 +197,10 @@ export default function OrderDetails() {
           <hr style={{ margin: "16px 0" }} />
           <p>{t.ProductTotal}: {cartItems.length}</p>
           <p>
-           {t.money} Rp{" "}
+            {t.money} Rp{" "}
             {totalPrice
               ? Number(totalPrice).toLocaleString("id-ID")
-              : cartItems
-                  .reduce((sum, item) => sum + item.price, 0)
-                  .toLocaleString("id-ID")}
+              : cartItems.reduce((sum, item) => sum + item.price, 0).toLocaleString("id-ID")}
           </p>
         </div>
       </div>

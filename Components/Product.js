@@ -55,7 +55,8 @@ export default function Product() {
           onChange={(e) => setSearchQuery(e.target.value)}
           style={{
             padding: 8,
-            width: 380,
+            width: "100%",
+            maxWidth: "400px",
             color: "white",
             backgroundColor: "#042E61",
             border: "none",
@@ -65,53 +66,71 @@ export default function Product() {
       </div>
 
       {filteredProducts.length === 0 ? (
-        <Empty description={t.noProducts || "No products found"} style={{ backgroundColor: "#BFD4E4" }} />
+        <Empty
+          description={t.noProducts || "No products found"}
+          style={{ backgroundColor: "#BFD4E4" }}
+        />
       ) : (
         <>
-          <Row gutter={[16, 16]} style={{ backgroundColor: "#BFD4E4" }}>
+          <Row gutter={[16, 16]} style={{ backgroundColor: "#BFD4E4", padding: "0 16px" }}>
             {visibleProducts.map((product) => (
               <Col
-                xs={8}
-                sm={8}
+                xs={24} 
+                sm={12} 
                 md={8}
-                lg={8}
+                lg={6}   
                 key={product.id}
-                style={{ backgroundColor: "#BFD4E4", padding: 32 }}
               >
-                <Card hoverable style={{ backgroundColor: "#40648F", color: "white" }}>
+                <Card
+                  hoverable
+                  style={{
+                    backgroundColor: "#40648F",
+                    color: "white",
+                    borderRadius: "12px",
+                  }}
+                >
                   <div
                     style={{
                       backgroundColor: "white",
-                      height: "273px",
+                      height: "220px",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
+                      borderRadius: "8px",
+                      overflow: "hidden",
                     }}
                   >
                     {product.image && (
                       <img
                         src={product.image}
                         alt={product.name?.[language]}
-                        style={{ height: "273px" }}
+                        style={{
+                          maxHeight: "100%",
+                          maxWidth: "100%",
+                          objectFit: "contain",
+                        }}
                       />
                     )}
                   </div>
                   <h1
                     style={{
                       fontFamily: "Cormorant Garamond, serif",
-                      fontSize: 20,
+                      fontSize: "1.2rem",
+                      marginTop: "12px",
                     }}
                   >
                     {product.name?.[language]}
                   </h1>
-                  <p>Rp {product.price}</p>
+                  <p style={{ marginBottom: "8px" }}>
+                    Rp {product.price.toLocaleString("id-ID")}
+                  </p>
                   <Button
                     type="primary"
                     style={{
                       backgroundColor: "#BFCDE4",
                       borderRadius: 50,
                       border: "none",
-                      fontSize: 20,
+                      fontSize: "1rem",
                       width: "100%",
                       height: "40px",
                       marginTop: "10px",

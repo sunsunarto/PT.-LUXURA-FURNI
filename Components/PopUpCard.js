@@ -7,7 +7,7 @@ import { translations } from "../utils/i18n";
 
 export default function PopUpCart({ cartItems, visible, onClose }) {
   const { language } = useContext(LanguageContext);
-  const t = translations[language]; 
+  const t = translations[language];
   const { removeItem } = useContext(CartContext);
   const router = useRouter();
 
@@ -29,19 +29,22 @@ export default function PopUpCart({ cartItems, visible, onClose }) {
       placement="right"
       onClose={onClose}
       open={visible}
-      width={360}
+      width={"100%"}
       bodyStyle={{ padding: "16px" }}
-      style={{ backgroundColor: "#40648F", color: "white"}}
+      style={{ backgroundColor: "#40648F", color: "white" }}
+      className="popup-cart"
     >
       <div>
         {cartItems.map((item, index) => (
           <div
             key={`${item.name?.id || item.name?.en}-${index}`}
             style={{
-              marginBottom: "24px",
+              marginBottom: "16px",
               display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
+              flexWrap: "wrap",
+              gap: "12px",
             }}
           >
             <img
@@ -49,12 +52,19 @@ export default function PopUpCart({ cartItems, visible, onClose }) {
               alt={item.name?.id || item.name?.en}
               style={{
                 maxHeight: "70px",
-                marginBottom: "8px",
                 borderRadius: "8px",
+                flex: "0 0 70px",
               }}
             />
-            <div style={{ display: "flex", flexDirection: "column", width: "200px" }}>
-              <p style={{ marginBottom: "4px" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                flex: "1 1 auto",
+                minWidth: "150px",
+              }}
+            >
+              <p style={{ marginBottom: "4px", fontWeight: "500" }}>
                 {item.name?.[language] || item.name?.en}
               </p>
               <p style={{ marginBottom: "4px" }}>
@@ -65,21 +75,38 @@ export default function PopUpCart({ cartItems, visible, onClose }) {
               danger
               size="small"
               onClick={() => removeItem(item.id)}
-              style={{backgroundColor: "#D9D9D9", color: "black", borderRadius: "20px"}}
+              style={{
+                backgroundColor: "#D9D9D9",
+                color: "black",
+                borderRadius: "20px",
+                flexShrink: 0,
+              }}
             >
-              {t.erease}  
+              {t.erease}
             </Button>
           </div>
         ))}
       </div>
-
-      <div style={{ marginTop: "24px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+      <div
+        style={{
+          marginTop: "24px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          flexWrap: "wrap",
+          gap: "12px",
+        }}
+      >
         <p style={{ fontWeight: "bold", fontSize: "16px" }}>
           {t.total}: Rp {totalPrice.toLocaleString("id-ID")}
         </p>
         <Button
           type="primary"
-          style={{ marginTop: "12px", backgroundColor: "#D9D9D9", color: "black", borderRadius: "20px" }}
+          style={{
+            backgroundColor: "#D9D9D9",
+            color: "black",
+            borderRadius: "20px",
+          }}
           onClick={handleCheckout}
         >
           {t.checkout}
